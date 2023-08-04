@@ -29,7 +29,7 @@ import streamlit as st
 from dataclasses import dataclass
 from typing import Any, List
 from web3 import Web3
-w3 = Web3(Web3.HTTPProvider('HTTP://127.0.0.1:7545'))
+w3 = Web3(Web3.HTTPProvider('http://127.0.0.1:7545'))
 
 ################################################################################
 # Step 1:
@@ -101,7 +101,7 @@ candidate_database = {
 people = ["Lane", "Ash", "Jo", "Kendall"]
 
 
-def get_people(w3):
+def get_people():
     """Display the database of Fintech Finders candidate information."""
     db_list = list(candidate_database.values())
 
@@ -152,7 +152,7 @@ st.sidebar.write(account.address)
 # Call `get_balance` function and pass it your account address
 # Write the returned ether balance to the sidebar
 
-balance = get_balance(account.address)
+balance = get_balance(w3,account.address)
 st.sidebar.write(balance)
 ##########################################
 
@@ -277,11 +277,11 @@ if st.sidebar.button("Send Transaction"):
     # Your `account`, the `candidate_address`, and the `wage` as parameters
     # Save the returned transaction hash as a variable named `transaction_hash`
    
-    send_transaction(account,candidate_address,wage)
-
+    transaction_hash = send_transaction(w3,account,candidate_address,wage)
+        
     # Markdown for the transaction hash
     st.sidebar.markdown("#### Validated Transaction Hash")
-
+    
     # Write the returned transaction hash to the screen
     st.sidebar.write(transaction_hash)
 
