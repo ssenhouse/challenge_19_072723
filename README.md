@@ -39,15 +39,16 @@ The following images show how an examples where I selected and then paid three i
 
 The following image shows the inital stremlit app page
 
-![streamlit_image](Images/streamlit_transaction.png)
+![streamlit_image](./Starter_Code/Images/streamlit_transaction.png)
 
 The image below shows the blockchain transactions in ganache
 
-![ganache_blockchain_transaction](Images/gnache_blockchain.png)
+![ganache_blockchain_transaction](./Starter_Code/Images/gnache_blockchain.png)
 
 Image showing the transaction history from ganache
 
-![ganache_transaction_history](Images/gnache_transactions.png)
+![ganache_transaction_history](./Starter_Code/Images/gnache_transactions.png)
 
 Finally the image showing the balance in my Ethereum wallet
-![ganache_account](Images/gnache_account.png)
+
+![ganache_account](./Starter_Code/Images/gnache_account.png)
