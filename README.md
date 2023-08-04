@@ -11,20 +11,20 @@ To accomplish this and test it in a practice environment. **Ganache** is a progr
 
 ---
 ## Technologies
-        1. python
-        2. Ganache (https://trufflesuite.com/ganache/)
-        3. Streamlit - User interface to select a fintech professional and determine the hours to pay that professional
-        4. Web3 - a python library for connecting to and performing operations on Ethereum-based blockchains
-        5. Mnemonic - used within an .env file to connect to the Ethereum wallet
+1. python
+2. [Ganache](https://trufflesuite.com/ganache/)
+3. Streamlit - User interface to select a fintech professional and determine the hours to pay that professional
+4. Web3 - a python library for connecting to and performing operations on Ethereum-based blockchains
+5. Mnemonic - used within an .env file to connect to the Ethereum wallet
 
 ---
 ## Run Instructions
 Once you've downloaded the file, you'll have a few things to do for setup.
 
-        1. Download and install Ganache
-        2. Install Web3 
-        3. Install Streamlit
-        4. Install bip44 
+1. Download and install Ganache
+2. Install Web3 
+3. Install Streamlit
+4. Install bip44 
 
 Once you've installed the required packages, you need to change the URL contained within the 'fintech_finder.py' file to inlcude your Ganache server. 
 
@@ -39,15 +39,15 @@ The following images show how an examples where I selected and then paid three i
 
 The following image shows the inital stremlit app page
 
-![streamlit_image](\Images\streamlit_transaction.png)
+![streamlit_image](/Images/streamlit_transaction.png)
 
 The image below shows the blockchain transactions in ganache
 
-![ganache_blockchain_transaction](\Images\gnache_blockchain.png)
+![ganache_blockchain_transaction](/Images/gnache_blockchain.png)
 
 Image showing the transaction history from ganache
 
-![ganache_transaction_history](\Images\gnache_transactions.png)
+![ganache_transaction_history](/Images/gnache_transactions.png)
 
 Finally the image showing the balance in my Ethereum wallet
-![ganache_account](\Images\gnache_account.png)
+![ganache_account](/Images/gnache_account.png)
